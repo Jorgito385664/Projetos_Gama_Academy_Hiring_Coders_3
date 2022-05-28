@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jorge Gabriel</title>
+</head>
+<body>
+    <header>
+        
+        <div>
+            
+            <img src="./logo2.jpg" alt="Logo Jorge Gabriel" width="22%" >
+            
+        </div>
+        
+        <ul>
+            <li><a target="_blank" href="https://github.com/Jorgito385664"> GitHub</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/jorge-gabriel-4343581b9/">LinkedIn</a></li>
+            <li><a target="_blank" href="mailto:jorgegabriel1993@hotmail.com">Email</a></li>
+            <li><a target="_blank" href="https://wa.me/21979780748">Whatsapp</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Jorge Gabriel</h1>
+                <h5>Estudante de Ciência da Computação</h5>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <img src="./perfil.jpg" alt="">
+                    <p>
+                        Olá, me chamo Jorge, tenho 29 anos.
+                    </p>
+                </div>
+                <div>
+                    <img src="./programacao.png" alt="">
+                    <p> Linguagens de programação Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nisi.</p>
+                </div>
+                <div>
+                    <img src="./front.jpg" alt="" >
+                    <p>Conhecimento Front end Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, doloremque impedit! Fugit?</p>
+                </div>
+                <div>
+                    <img src="./cursos.png" alt="" >
+                    <p> Cursos e certificados Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+                
+            <div style=" display: none;" id="about">
+                <p>
+                    Olá, me chamo Jorge, tenho 29 anos e atualmente faço o Bacharelado de Ciência
+                    da Computação.
+                </p>
+            </div>
+        
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Digite seu melhor email">
+                    <button> Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
